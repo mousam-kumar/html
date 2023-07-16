@@ -122,7 +122,9 @@
 <h3>Fill up your details</h3>
 <form action="backend.php">
     <div>
-        Name : <input type="text" name="myName">
+        <label for="name">
+        Name : <input type="text" name="myName" id="name">
+    </label>
     </div>
     <br>
     <div>
@@ -130,23 +132,54 @@
     </div>
     <br>
     <div>
-        E-mail : <input type="email" name="myEmail">
+        <label for="mail">
+        E-mail : <input type="email" name="myEmail" id="mail"></label>
     </div>
     <br>
     <div>
-        Date of Birth : <input type="date" name="myDob">
+        <label for="dob">
+        Date of Birth : <input type="date" name="myDob" id="dob"></label>
     </div>
     <br>
     <div>
-        Income : <input type="number" name="myIncome">
+        <label for="income">
+        Income : <input type="number" name="myIncome" id="income"></label>
     </div>
     <br>
     <div>
-         <input type="checkbox" name="mydeclaration">  I hereby declare that all the information submited by me is true as per myknowledge.
+        <label for="decl">
+         <input type="checkbox" name="mydeclaration" id="decl">  I hereby declare that all the information submited by me is true as per myknowledge.
+        </label>
     </div>
     <br>
     <div>
-        Write about yourself : <br><textarea name="myText"  cols="60" rows="10"></textarea>
+        <label for="text">
+        Write about yourself : <br><textarea name="myText"  cols="60" rows="10" id="text"></textarea></label>
+    </div>
+    <br>
+    <div>
+        <label for="mode">Mode of  Transport :  
+        <select name="Mode of Transport" id="mode">
+            <option value="foot" selected>By Foot</option>
+            <option value="bicycle">Bicycle</option>
+            <option value="scooter">Scooter</option>
+            <option value="bike">Bike</option>
+            <option value="dirtbike">Dirt Bike</option>
+            <option value="sportsbike">Sports Bike</option>
+            <option value="superbike">Super Bike</option>
+            <option value="hb">Hatchback</option>
+            <option value="prehb">Premium Hatchback</option>
+            <option value="comsedan">Compact Sedan</option>
+            <option value="sedan">Sedan</option>
+            <option value="presedan">Premium Sedan</option>
+            <option value="comsuv">Compact SUV</option>
+            <option value="suv">SUV</option>
+            <option value="presuv">Premium SUV</option>
+            <option value="muv">MUV</option>
+            <option value="sportscar">Sports Car</option>
+            <option value="supercar">Super Car</option>
+        </select>
+    </label>
     </div>
     <br>
     <div>
@@ -155,8 +188,10 @@
     </div>
     
 </form>
+<br>
 
 <a href="#">Back to Top</a>
+
 
 </body>
 </html>
